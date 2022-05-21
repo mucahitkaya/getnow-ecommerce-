@@ -55,8 +55,10 @@ fetch("https://dummyjson.com/products")
       productPrice.textContent = `$${product.price}`;
       productDesc.textContent = product.title;
 
+      //new firstchild appends to the productcontainer
       productContainer.append(card);
       
+      //returns these to the products array
       return {
         brand: product.brand,
         title: product.title,
@@ -64,6 +66,7 @@ fetch("https://dummyjson.com/products")
       };
     });
   });
+
 
 const filterArrow = document.querySelector(".filter-header .arrow");
 const filterContainer = document.querySelector(".filter-container");
@@ -80,6 +83,7 @@ filterArrow.addEventListener("click", () => {
   }
 });
 
+//
 const genderArrow = document.querySelector(".gender-header .arrow");
 const genderContainer = document.querySelector(".gender-container");
 
