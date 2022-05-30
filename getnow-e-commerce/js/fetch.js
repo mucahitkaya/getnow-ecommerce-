@@ -6,11 +6,13 @@ const darkMode = document.querySelector(".moon");
 const lightMode = document.querySelector(".sun");
 const mobileNav = document.querySelector(".mobile-nav");
 const hamburgerLines = document.querySelectorAll(".hamburger svg line");
+const categories = document.querySelectorAll(".category");
 let products = [];
 let products2 = [];
 
 searchInput.addEventListener("input", (e) => {
   const value = e.target.value.toLowerCase();
+
   products.forEach((product) => {
     if (
       product.brand.toLowerCase().includes(value) ||

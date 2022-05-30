@@ -21,6 +21,9 @@ a {
   /* card frame color A0EBD4 */
   color: #fff;
 }
+.hide {
+  display: none;
+}
 
 .getnow {
   fill: #17cf97;
